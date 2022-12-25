@@ -10,8 +10,8 @@ body {
 #body {
     display: grid;
     grid-template-columns: 1.5fr 3fr;
-    grid-template-rows: 60px 55px 190px 170px 170px auto;
-    column-gap: 10px;
+    grid-template-rows: 60px 40px 190px 170px 170px auto;
+    column-gap: 15px;
     row-gap: 10px;
     padding: 3%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -37,7 +37,7 @@ body {
 }
 
 li {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .title {
@@ -61,8 +61,8 @@ li {
 }
 
 .img {
-    position: relative;
     width: 100%;
+    height: 100%;
 }
 
 .img img {
@@ -75,10 +75,11 @@ li {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 
 .summary p {
-    font-size: 30px;
+    font-size: 28px;
 }
 
 .media {
@@ -95,15 +96,16 @@ li {
 
 @media(max-width:1150px) {
     #body {
-        grid-template-rows: 5vw 6vw 17vw 16vw 16vw auto;
+        grid-template-rows: 5.5vw 3vw 17vw 16vw 16vw auto;
+        gap: 2vw
     }
 
     .title {
-        font-size: 4vw;
+        font-size: 6vw;
     }
 
     .navbar {
-        height: 3vw;
+        height: 2.8vw;
     }
 
     .navbar a {
@@ -115,11 +117,11 @@ li {
     }
 
     .block>h2 {
-        font-size: 3vw
+        font-size: 4vw
     }
 
     li {
-        font-size: 2.5vw;
+        font-size: 2.8vw;
     }
 
     .summary p {
@@ -132,25 +134,6 @@ li {
     }
 }
 
-@media(max-width: 620px) {
-    #body {
-        grid-template-rows: 8vw 5vw 17vw 16vw 16vw auto;
-    }
-
-    .title {
-        text-align: center;
-        font-size: 8vw;
-    }
-
-    .navbar a {
-        font-size: 3vw;
-    }
-
-    .block>h2 {
-        font-size: 5vw;
-    }
-
-}
 
 @media(max-width: 450px) {
     .media {
